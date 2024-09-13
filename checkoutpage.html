@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Checkout</h1>
+
+        <!-- Shipping Information -->
+        <div class="mb-4">
+            <h2 class="h4">Shipping Information</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="yogesh" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Gourishetty" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" required>
+                    </div>
+                   
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" class="form-control" required>
+                        <option selected>Choose...</option>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>India</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- Payment Information -->
+        <div class="mb-4">
+            <h2 class="h4">Payment Information</h2>
+            <form>
+                <div class="form-group">
+                    <label for="cardName">Name on Card</label>
+                    <input type="text" class="form-control" id="cardName" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9101 1121" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Order Review -->
+        <div class="mb-4">
+            <h2 class="h4">Order Review</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Order Item Example -->
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="publisher1.png" class="img-fluid" alt="Product">
+                                    <div class="ml-3">
+                                        <h5 class="mb-1">Product Title 1</h5>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>1000</td>
+                            <td>1</td>
+                            <td>1000</td>
+                        </tr>
+                        <!-- Repeat above block for more order items -->
+                        
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3" class="text-right">total</th>
+                            <th>1000</th>
+                        </tr>
+                       
+                        
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <!-- Place Order Button -->
+        <div class="text-center">
+            <button class="btn btn-primary btn-lg">Place Order</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
